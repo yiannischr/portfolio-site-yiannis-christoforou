@@ -2,9 +2,15 @@
 <html lang="en" dir="ltr">
 
 <head>
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ioannis Christoforou</title>
+
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+
   <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/favicon.ico">
   <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon.ico">
   <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon.ico">
@@ -13,13 +19,18 @@
   <meta name="msapplication-TileColor" content="#da532c">
   <meta name="theme-color" content="#ffffff">
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
 
 </head>
 
 <body>
-  <header>
-    <div>
-      <img src="img/blue_logo_tablet-desktop.svg" alt="Logo">
+  <header id="navigation">
+    <div class="container">
+      <img src="img/blue_logo_tablet-desktop.svg" width="231" height="62.82" alt="Logo">
       <nav>
         <ul>
           <li><a href="index.html">Work</a></li>
@@ -30,14 +41,14 @@
     </div>
   </header>
   <main>
-    <div>
-      <div>
+    <div id="hero">
+      <div class="container">
         <h1>Hi, my name is Ioannis Christoforou. <span>I'm a UI/UX designer from Cyprus.</span></h1>
         <p>I am also into graphic design and frontend development!</p>
       </div>
     </div>
     <div>
-      <div>
+      <div id="work">
         <h2>My Work</h2>
         <div class="project-card">
           <div class="project-card__media-wrapper">
@@ -51,7 +62,7 @@
             <p>
               Creo Apparel is an online store, that helps everyone find products quickly and easily to match their
               particular needs.</p>
-            <a href="creo.html">Case Study</a>
+            <a href="creo.html" class="button">Case Study</a>
           </div>
         </div>
 
@@ -105,12 +116,12 @@
       </div>
     </div>
   </main>
-  <footer>
-    <div>
+  <footer id="contact">
+    <div class="container">
       <h2>Get In Touch</h2>
       <p>Thank you for your time in checking out my website</p>
       <div>
-        <a href="mailto:yiannis.chr00@gmail.com">Send email</a>
+        <a href="mailto:yiannis.chr00@gmail.com" class="button  contact">Send email</a>
       </div>
       <div>
 
