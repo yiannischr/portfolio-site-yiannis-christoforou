@@ -26,16 +26,18 @@
 </head>
 
 <body>
-  <header>
-    <div>
-      <img src="img/blue_logo_tablet-desktop.svg" width="231" height="62.82" alt="Logo">
-      <nav>
-        <ul>
-          <li><a href="index.html">Work</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
+  <header id="navigation">
+    <div class="container">
+      <img src="img/new_white_logo.svg" alt="Logo" class="logo">
+      <div class="menu">
+        <nav>
+          <ul class="navigation">
+            <li><a href="index.html">Work</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
     </div>
   </header>
 
@@ -45,14 +47,22 @@
         <h1>About</h1>
       </div>
     </div>
-    <div>
-      <div>
-        <picture>
-          <source srcset="img/image_about_600px.png" media="max-width:767">
-          <img src="img/image_about_1200px.png" alt="yiannisphoto">
-        </picture>
-        <div>
-          <div>
+
+    <div id="about">
+      <div class="container">
+        <div class="column col-md-4">
+          <picture>
+            <source srcset="img/image_about_600px.png" media="max-width:767">
+            <img src="img/image_about_1200px.png" alt="yiannisphoto">
+          </picture>
+        </div>
+      </div>
+    </div>
+
+    <div id="my-story">
+      <div class="container">
+        <div class="row">
+          <div class="column col-md-6">
             <h2>My Story</h2>
             <p>I am an enthusiastic Multimedia and Graphic Arts graduate with a passion for user- centered design.
               I have 3 years of practical experience as a graphic designer in a print shop,
@@ -60,45 +70,50 @@
               I am currently enhancing my skills through an online UI/UX design course,
               looking forward to transitioning to a position in the field. I am a diligent,
               creative and dedicated individual, always willing to provide engaging design solutions.</p>
-            <a href="files/Ioannis_Christoforou_CV.pdf" target="_blank">Download my CV</a>
-          </div>
-          <div class="skills-tools">
-            <h2>Skills [&] Tools</h2>
-            <div>
-              <div class="skills">
-                <h3>Relevant Skills</h3>
-                <ul>
-                  <li>UI/UX Design</li>
-                  <li>Graphic Design</li>
-                  <li>Frontend Development</li>
-                </ul>
-              </div>
-              <div class="tools">
-                <h3>Tools I Use</h3>
-                <ul>
-                  <li>Figma</li>
-                  <li>Adobe Xd</li>
-                  <li>Adobe Photoshop</li>
-                  <li>Adobe Illustrator</li>
-                  <li>Adobe Indesign</li>
-                </ul>
-              </div>
+
+            <div class="reume">
+              <a href="files/Ioannis_Christoforou_Resume.pdf" target="_blank">Download my Resume</a>
             </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="skills-tools">
+      <div class="container">
+        <div class="row">
+          <h2>Skills &amp Tools</h2>
+          <div class="column col-md-5 col-lg-5">
+            <h3>Relevant Skills</h3>
+            <ul>
+              <li>UI/UX Design</li>
+              <li>Graphic Design</li>
+              <li>Frontend Development</li>
+            </ul>
+          </div>
+          <div class="column col-md-5 col-lg-5">
+            <h3>Tools I Use</h3>
+            <ul>
+              <li>Figma</li>
+              <li>Adobe Xd</li>
+              <li>Adobe Photoshop</li>
+              <li>Adobe Illustrator</li>
+              <li>Adobe Indesign</li>
+            </ul>
           </div>
         </div>
       </div>
     </div>
   </main>
 
-  <footer id="Contact">
-    <div>
+  <footer id="contact">
+    <div class="container">
       <h2>Get In Touch</h2>
       <p>Thank you for your time in checking out my website</p>
-      <div>
-        <a href="mailto:yiannis.chr00@gmail.com">Send email</a>
+      <div class="row">
+        <a href="mailto:yiannis.chr00@gmail.com" class="button  contact">Send email</a>
       </div>
-      <div>
-
+      <div class="social-icon">
         <a href="https://www.linkedin.com/in/ioannis-christoforou-3135b8293/" target="_blank">
           <svg enable-background="new 0 0 56.693 56.693" height="32px" id="Layer_1" version="1.1"
             viewBox="0 0 56.693 56.693" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"
