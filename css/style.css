@@ -6,6 +6,7 @@ Secondary Color (White): #FFFFFF
 Tertiary Color (Red): #D7263D
 */
 
+
 * {
   box-sizing: border-box;
 }
@@ -34,10 +35,24 @@ nav > ul > li > a {
   padding: 0 15px;
   text-transform: uppercase;
   font-weight: 700;
-  color: #ffffff;
+  color: #F5F3F5;
 }
 
+nav > ul > li > a:visited {
+  color:#F5F3F5;
+}
 
+nav > ul > li > a:hover {
+color: #D7263D;
+}
+
+nav > ul > li > a:focus{
+  color: #D7263D;
+}
+
+nav > ul > li > a:active {
+  color: #D7263D;
+}
 
 .logo {
   max-width: 250px;
@@ -60,9 +75,13 @@ nav > ul > li > a {
   color: #F5F3F5;
 }
 
+#hero span {
+  display: block;
+}
+
 body {
     background-color: #F5F3F5;
-    padding: 120px 0;
+    padding: 99px 0;
     font-family: 'Poppins', sans-serif;
     font-size: 16px; /* Sets the font size to 16px */
     font-weight: 300; /* Sets the font weight to 300 */
@@ -96,6 +115,57 @@ body {
     width: 100%;
   }
 
+  .anton-alphabet{
+    font-family: 'Anton';
+  }
+
+  .anton-title{
+    font-family: 'Anton';
+    font-size: 25px;
+  }
+
+  .manrope-alphabet{
+    font-family: 'Manrope';
+  }
+
+  .manrope-title{
+    font-family: 'Manrope';
+    font-size: 25px;
+  }
+
+  .about-picture {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
+
+  @keyframes color-change {
+    from {fill: #edc655;}
+    to {fill: #f76414;}
+  }
+
+  .sun {
+    animation: 4s color-change infinite alternate linear;
+  }
+
+  @keyframes cloud-move {
+    from {transform: translate(0,50px);}
+    to {transform: translate(200px,50px);}
+  }
+
+  .cloud-front {
+    animation: 30s cloud-move infinite alternate linear;
+  }
+
+  @keyframes cloud-move-reverse {
+    from {transform: translate(446px,48px);}
+    to {transform: translate(100px, 48px);}
+  }
+
+  .cloud-back {
+    animation: 34s cloud-move-reverse infinite alternate linear;
+  }
+
   a {
     color: #D7263D;
     text-decoration: none; /* No underlining */
@@ -121,6 +191,7 @@ body {
     color: #D7263D;
     border: 2px solid #D7263D; /* needed to override the default link color */
     font-weight: 400;
+    text-decoration: none;
     padding: 5px;
     border-radius: 3px;
     transition: 0.2s opacity;
@@ -130,6 +201,8 @@ body {
   .button:hover {
     opacity: 0.8; /* Reduces the opacity of the button to 80% */
     text-decoration: none;
+    background-color: #D7263D;
+    color: #F5F3F5;
   }
 
   .button.contact {
@@ -151,4 +224,129 @@ body {
 
   .row {
     margin: 25px 0; /* 25px top and bottom, 0 left and right */
+    
   }
+
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  footer{
+  background-color: #0D1321;
+  text-align: center;
+  padding: 10px 0;
+  color: #F5F3F5;
+  }
+/* ==============================
+Medium devices (640px and larger)
+================================= */
+@media only screen and (min-width: 640px) {
+
+  header {
+    text-align: unset;
+    padding: 20px 0 13px;
+  }
+
+  nav {
+    width: auto;
+    float: right;
+    margin-top: 4px;
+  }
+
+  main {
+    font-size: 18px;
+  }
+
+  .menu {
+    display: block;
+    width: 400px;
+    float: right;
+  }
+
+  .col-md-4 {
+    width: 40%;
+  }
+
+  .col-md-6 {
+    width: 50%;
+  }
+
+  .col-md-5 {
+    width: 50%;
+  }
+
+
+  [class*="col-"] {
+    float: left;
+    padding: 10px;
+  }
+
+  #skills-tools h3 { margin-top: 0;}
+
+  #my-story h2 { margin-top: 0;}
+
+
+}
+
+/* ==============================
+Large devices (1024px or larger)
+================================= */
+@media only screen and (min-width: 1024px) {
+  
+  header {
+    text-align: unset;
+    padding: 20px 0 13px;
+  }
+
+  nav {
+    width: auto;
+    float: right;
+    margin-top: 4px;
+  }
+
+  main {
+    font-size: 18px;
+  }
+
+  .col-lg-6 {
+    width: 60%;
+  }
+
+  .col-lg-4 {
+    width: 40%;
+  }
+
+  .col-lg-5 {
+    width: 50%;
+  }
+
+  [class*="col-"] {
+    float: left;
+    padding: 10px;
+  }
+
+  
+  .container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #skills-tools h3 { margin-top: 0;}
+
+  #my-story h2 { margin-top: 0;}
+
+}
+/* ==============================
+X-large devices (1440px or larger)
+================================= */
+@media only screen and (min-width: 1440px) {
+}
+
+/* ==============================
+Extra-large devices (1920px or larger)
+================================= */
+@media only screen and (min-width: 1920px) {
+}
