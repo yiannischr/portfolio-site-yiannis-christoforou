@@ -7,6 +7,10 @@ Tertiary Color (Red): #D7263D
 */
 
 
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -77,17 +81,24 @@ nav > ul > li > a:active {
 
 #hero span {
   display: block;
+  font-size: 70%;
+  margin-top: 1em;
 }
 
 body {
     background-color: #F5F3F5;
-    padding: 99px 0;
     font-family: 'Poppins', sans-serif;
-    font-size: 16px; /* Sets the font size to 16px */
+    font-size: 1em; /* Sets the font size to 16px */
     font-weight: 300; /* Sets the font weight to 300 */
     line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
     color: #0D1321;
   }
+
+  main {
+    font-size: 1em;
+    padding-block-start: 157.8px;
+    padding-block-start: 113.2px;
+  }  
   
   h1, h2, h3, h4 {
     line-height: 1.4;
@@ -105,6 +116,7 @@ body {
   h3 {
     font-size: 1.75em;
     font-weight: 400;
+    margin-top: 0;
   }
   h4 {
     font-size: 1.35em;
@@ -224,14 +236,8 @@ body {
 
   .row {
     margin: 25px 0; /* 25px top and bottom, 0 left and right */
-    
   }
 
-  .row::after {
-    content: "";
-    clear: both;
-    display: table;
-  }
   
   footer{
   background-color: #0D1321;
@@ -277,10 +283,46 @@ Medium devices (640px and larger)
     width: 50%;
   }
 
+  .project-card {
+    display:flex;
+    gap: 2em;
+  }
 
-  [class*="col-"] {
-    float: left;
-    padding: 10px;
+  .project-card-media-wrapper {
+    display: flex;
+  }
+
+  .project-card-content-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-block: 2em;
+    justify-content: center;
+  }
+  
+  .project-img {
+    height: 100%;
+    padding-bottom: 1em;
+    object-fit: cover;
+  }
+
+  .about-wrapper {
+    display: flex;
+    gap: 2em;
+  }
+
+  .about-img{
+    height: 100%;
+    object-fit: cover;
+    object-position: 20%;
+  }
+
+  .my-role{
+    column-count: 3;
+  }
+
+  .skills-and-tools {
+    column-count: 2;
   }
 
   #skills-tools h3 { margin-top: 0;}
@@ -306,9 +348,6 @@ Large devices (1024px or larger)
     margin-top: 4px;
   }
 
-  main {
-    font-size: 18px;
-  }
 
   .col-lg-6 {
     width: 60%;
@@ -322,12 +361,6 @@ Large devices (1024px or larger)
     width: 50%;
   }
 
-  [class*="col-"] {
-    float: left;
-    padding: 10px;
-  }
-
-  
   .container {
     max-width: 1200px;
     margin-left: auto;
