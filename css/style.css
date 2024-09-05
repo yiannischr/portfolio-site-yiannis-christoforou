@@ -152,6 +152,59 @@ body {
     width: 100%;
   }
 
+  .poppins-title{
+    font-family: 'Poppins';
+    font-weight: bold;
+    font-size: 40px;
+  }
+
+  .poppins-alphabet{
+    font-family: 'Poppins';
+  }
+
+  .rubik-parapgraph{
+    font-family: 'Rubik';
+  }
+  
+  .rubik-title-1{
+    font-family: 'Rubik';
+    font-size: 40px;
+    font-weight: medium;
+  }
+  
+  .rubik-title-2{
+    font-family: 'Rubik';
+    font-size: 30px;
+    font-weight: bolder;
+  }
+
+  .rubik-title-3{
+    font-family: 'Rubik';
+    font-size: 28px;
+    font-weight: medium;
+  }
+
+  .rubik-title-4{
+    font-family: 'Rubik';
+    font-size: 26px;
+    font-weight: medium;
+  }
+
+  .rubik-title-5{
+    font-family: 'Rubik';
+    font-size: 20px;
+    font-weight: medium;
+  }
+
+  .inter-alphabet{
+    font-family: 'Inter';
+  }
+
+  .inter-title{
+    font-family: 'Inter';
+    font-size: 25px;
+  }
+
   .anton-alphabet{
     font-family: 'Anton';
   }

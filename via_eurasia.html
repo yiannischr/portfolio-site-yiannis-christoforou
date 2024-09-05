@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ioannis Christoforou</title>
+
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon.ico">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon.ico">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/e1186794eb.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="navtoggle" id="myNavtoggle">
+                <a href="index.html"><img src="img/new_white_logo.svg" alt="Logo" class="logo"></a>
+                <nav>
+                    <ul class="navigation">
+                        <li><a href="index.html">Work</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="#contact" onclick="menuToggle()">Contact</a></li>
+                        <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i
+                                    class="fas fa-bars"></i></a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div id="project_title">
+            <div class="container">
+                <h1>Via Eurasia Case Study</h1>
+                <div class="row">
+                    <picture>
+                        <source srcset="img/via_eurasia/image_via_eurasia_cover_600px.jpg" media="(max-width:767px)">
+                        <img src="img/via_eurasia/image_via_eurasia_cover_1200px.jpg" alt="Creo Apparel:Clothing App">
+                    </picture>
+                    
+                </div>
+            </div>
+        </div>
+
+        <div  id="project-overview">
+            <div class="container">
+                <h2>Overview</h2>
+                <p>
+                    The Via Eurasia app is a mobile application designed to support travelers,
+                    hikers, and pilgrims who are navigating the Via Eurasia, a long-distance cultural
+                    route that spans several countries across Europe and Asia.
+                    The app provides various features to enhance the experience of
+                    those trekking along this historical route.
+                </p>
+            </div>
+        </div>
+
+        <div id="project-purpose">
+            <div class="container">
+                <h2>Purpose &amp; Context</h2>
+                <p>
+                    “Imagine you've been hired by the NGO Culture Routes Society to redesign several
+                    parts of its app, Via Eurasia. The MVP of Via Eurasia had some success,
+                    but a recent acquisition has provided an extra budget to revitalize the product.
+                    A copywriter has been hired to help clean up some of the app's copy,
+                    and you'll work together to implement user feedback in the new design.”
+                </p>
+
+                <picture>
+                    <source srcset="img/via_eurasia/image_via_eurasia_casestudy1_600px.jpg" media="(max-width:767px)">
+                    <img src="img/via_eurasia/image_via_eurasia_casestudy1_1200px.jpg" alt="Via Eurasia 1">
+                </picture>
+            </div>
+        </div>
+
+        <div  id="project-objective">
+            <div class="container">
+                <h2>Objective</h2>
+                <p>
+                    Using the creative director's notes and the user feedback as a starting point,
+                    use the elements that I feel work and confidently suggest areas that can be improved.
+                </p>
+            </div>
+        </div>
+
+        <div id="project-feedback">
+            <div class="container">
+                <h2>User feedback revealed that:</h2>
+                <ul>
+                    <li> Navigation within the app is confusing;</li>
+                    <li> There are more screens than necessary;</li>
+                    <li> The branding and color feel dated and unsophisticated, and they don't follow accessibility guidelines.</li>
+                </ul>
+
+                <picture>
+                    <source srcset="img/via_eurasia/image_via_eurasia_casestudy2_600px.jpg" media="(max-width:767px)">
+                    <img src="img/via_eurasia/image_via_eurasia_casestudy2_1200px.jpg" alt="Via Eurasia 2">
+                </picture>
+            </div>
+        </div>
+
+        <div id="project-current-state">
+            <div class="container">
+                <h2>The creative director at Culture Routes Society has shared some notes about the current state of the app.</h2>
+                <ul>
+                    <li>The app's “Home” page looks like a legal document and is uninviting.
+                        Experiment by moving the sponsor logos and information to the “About” page.
+                        The layout of the “About” page should then be reorganized to make it more visually appealing.</li>
+                    <li>Once all the legal text and sponsor logos have been removed from the “Home” page,
+                        design a new logo and create an impactful “Welcome” page (to replace “Home”).</li>
+                    <li>Remove the “Check Before You Go” page and replace it with a new menu that
+                        includes the same 3 button topics (Route Updates, Weather, Guide Book).</li>
+                    <li>Via Eurasia's brand typeface is Inter, which you shouldn't change.
+                        You can, however, adjust the size and weight of the text on each page to
+                        create a better hierarchy and improve accessibility.</li>
+                    <li>Not every Frame needs a complete redesign, but they should all
+                        be improved from an accessibility standpoint. You might choose to keep
+                        the same layout for “Routes,” “Route Detail,” or “Points of Interest”
+                        and just update the brand colors to comply with accessibility best practices, for instance.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="project-tools">
+            <div class="container">
+                <h2>Tools I Used</h2>
+                <picture>
+                    <source srcset="img/via_eurasia/image_via_eurasia_casestudy3_600px.jpg" media="(max-width:767px)">
+                    <img src="img/via_eurasia/image_via_eurasia_casestudy3_1200px.jpg" alt="Via Eurasia 3">
+                </picture>
+            
+                <picture>
+                    <source srcset="img/via_eurasia/image_via_eurasia_casestudy4_600px.jpg" media="(max-width:767px)">
+                    <img src="img/via_eurasia/image_via_eurasia_casestudy4_1200px.jpg" alt="Via Eurasia 4">
+                </picture>
+            </div>
+        </div>
+
+        <div id="project-style">
+            <div class="container">
+                <h2>Style Guides</h2>
+                
+                <picture>
+                    <source srcset="img/via_eurasia/image_via_eurasia_casestudy5_600px.jpg" media="(max-width:767px)">
+                    <img src="img/via_eurasia/image_via_eurasia_casestudy5_1200px.jpg" alt="Via Eurasia 5">
+                </picture>
+                
+                <h3>Old Color Palette</h3>
+                <picture>
+                    <source srcset="img/via_eurasia/image_via_eurasia_casestudy6_600px.jpg" media="(max-width:767px)">
+                    <img src="img/via_eurasia/image_via_eurasia_casestudy6_1200px.jpg" alt="Via Eurasia 6">
+                </picture>
+
+                <h3>New Color Palette</h3>
+                <picture>
+                    <source srcset="img/via_eurasia/image_via_eurasia_casestudy7_600px.jpg" media="(max-width:767px)">
+                    <img src="img/via_eurasia/image_via_eurasia_casestudy7_1200px.jpg" alt="Via Eurasia 7">
+                </picture>
+
+                <h3>Typography</h3>
+                <picture>
+                    <source srcset="img/via_eurasia/image_via_eurasia_casestudy12_600px.jpg" media="(max-width:767px)">
+                    <img src="img/via_eurasia/image_via_eurasia_casestudy12_1200px.jpg" alt="Via Eurasia 12">
+                </picture>
+
+            <div class="inter-title">
+                <h4>Inter (body)</h4>
+            </div>
+                <div class="inter-alphabet">
+                <p> Body. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+                <p> Body. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+
+                    <picture>
+                        <source srcset="img/via_eurasia/image_via_eurasia_casestudy8_600px.jpg" media="(max-width:767px)">
+                        <img src="img/via_eurasia/image_via_eurasia_casestudy8_1200px.jpg" alt="Via Eurasia 8">
+                    </picture>
+            </div>
+        </div>
+
+        <div id="project-mockup">
+            <div class="container">
+                <picture>
+                    <source srcset="img/via_eurasia/image_via_eurasia_casestudy9_600px.jpg" media="(max-width:767px)">
+                    <img src="img/via_eurasia/image_via_eurasia_casestudy9_1200px.jpg" alt="Via Eurasia 9">
+                </picture>
+            </div>
+        </div>
+
+        <div id="project-prototypes">
+            <div class="container">
+                <picture>
+                    <source srcset="img/via_eurasia/image_via_eurasia_casestudy10_600px.jpg" media="(max-width:767px)">
+                    <img src="img/via_eurasia/image_via_eurasia_casestudy10_1200px.jpg" alt="Via Eurasia 10">
+                </picture>
+            </div>
+        </div>
+
+        <div id="project-mockups">
+            <div class="container">
+                <picture>
+                    <source srcset="img/via_eurasia/image_via_eurasia_casestudy11_600px.jpg" media="(max-width:767px)">
+                    <img src="img/via_eurasia/image_via_eurasia_casestudy11_1200px.jpg" alt="Via Eurasia 11">
+                </picture>
+            </div>
+        </div>
+
+        <div id="project-conclusion">
+            <div class="container">
+                <h2>The Conclusion</h2>
+                <p> This was a UI project that had to do with the re-design of an existing application.
+                    Seeing the end result and based on the feedback I've gotten from my mentor and friends
+                    and family, I think I've done pretty well. There is definitely always room for
+                    improvement and development. For example I could dive deeper into more detailed screens
+                    within the app.</p>
+
+                <p> Through this short project I realized that I can handle working under pressure as I
+                    only had a week to work on it. I also discovered that I am good at taking something
+                    ready-made and evolving it by solving any problems that this app has and fixing its
+                    weaknesses.</p>
+            </div>
+        </div>
+        
+    </main>
+
+    <footer id="contact">
+        <div class="container">
+            <h2>Get In Touch</h2>
+            <p>Thank you for your time in checking out my website</p>
+            <div class="row">
+                <a href="mailto:yiannis.chr00@gmail.com" class="button  contact">Send email</a>
+            </div>
+            <div class="social-icon">
+                <a href="https://www.linkedin.com/in/ioannis-christoforou-3135b8293/" target="_blank">
+                    <svg enable-background="new 0 0 56.693 56.693" height="32px" fill="#F5F3F5" id="Layer_1"
+                        version="1.1" viewBox="0 0 56.693 56.693" width="32px" xml:space="preserve"
+                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <g>
+                            <path d="M30.071,27.101v-0.077c-0.016,0.026-0.033,0.052-0.05,0.077H30.071z" />
+                            <path
+                                d="M49.265,4.667H7.145c-2.016,0-3.651,1.596-3.651,3.563v42.613c0,1.966,1.635,3.562,3.651,3.562h42.12   c2.019,0,3.654-1.597,3.654-3.562V8.23C52.919,6.262,51.283,4.667,49.265,4.667z M18.475,46.304h-7.465V23.845h7.465V46.304z    M14.743,20.777h-0.05c-2.504,0-4.124-1.725-4.124-3.88c0-2.203,1.67-3.88,4.223-3.88c2.554,0,4.125,1.677,4.175,3.88   C18.967,19.052,17.345,20.777,14.743,20.777z M45.394,46.304h-7.465V34.286c0-3.018-1.08-5.078-3.781-5.078   c-2.062,0-3.29,1.389-3.831,2.731c-0.197,0.479-0.245,1.149-0.245,1.821v12.543h-7.465c0,0,0.098-20.354,0-22.459h7.465v3.179   c0.992-1.53,2.766-3.709,6.729-3.709c4.911,0,8.594,3.211,8.594,10.11V46.304z" />
+                        </g>
+                    </svg>
+                </a>
+                <a href="https://www.behance.net/ioannischristo4" target="_blank">
+                    <svg viewBox="0 0 448 512" height="32px" width="32px" fill="#F5F3F5"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M186.5 293c0 19.3-14 25.4-31.2 25.4h-45.1v-52.9h46c18.6.1 30.3 7.8 30.3 27.5zm-7.7-82.3c0-17.7-13.7-21.9-28.9-21.9h-39.6v44.8H153c15.1 0 25.8-6.6 25.8-22.9zm132.3 23.2c-18.3 0-30.5 11.4-31.7 29.7h62.2c-1.7-18.5-11.3-29.7-30.5-29.7zM448 80v352c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V80c0-26.5 21.5-48 48-48h352c26.5 0 48 21.5 48 48zM271.7 185h77.8v-18.9h-77.8V185zm-43 110.3c0-24.1-11.4-44.9-35-51.6 17.2-8.2 26.2-17.7 26.2-37 0-38.2-28.5-47.5-61.4-47.5H68v192h93.1c34.9-.2 67.6-16.9 67.6-55.9zM380 280.5c0-41.1-24.1-75.4-67.6-75.4-42.4 0-71.1 31.8-71.1 73.6 0 43.3 27.3 73 71.1 73 33.2 0 54.7-14.9 65.1-46.8h-33.7c-3.7 11.9-18.6 18.1-30.2 18.1-22.4 0-34.1-13.1-34.1-35.3h100.2c.1-2.3.3-4.8.3-7.2z" />
+                    </svg>
+                </a>
+            </div>
+            <p>Copyright Ioannis Christoforou 2024</p>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="js/scripts.js"></script>
+
+</body>
+
+</html>
